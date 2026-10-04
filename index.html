@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Быстрый Сервис — заявки</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Служба поддержки «Быстрый Сервис»</h1>
+  <p>Панель входящих заявок</p>
+</header>
+
+<section id="about">
+  <p>Панель для диспетчера: все обращения клиентов попадают сюда одним
+  общим потоком. Диспетчер читает каждую заявку и решает, куда её
+  передать.</p>
+</section>
+
+<section id="add-ticket">
+  <h2>Новая заявка (форма для клиента)</h2>
+  <form id="ticketForm">
+    <label>Имя клиента<br><input type="text" id="ticketName" required></label><br><br>
+    <label>Текст обращения<br><textarea id="ticketText" rows="3" required></textarea></label><br><br>
+    <button type="submit">Отправить заявку</button>
+  </form>
+</section>
+
+<section id="queue">
+  <h2>Очередь заявок диспетчера</h2>
+  <ul id="ticketList"></ul>
+</section>
+
+<footer>
+  <p>Быстрый Сервис — ремонт и обслуживание бытовой техники</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
